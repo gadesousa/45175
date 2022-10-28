@@ -1,0 +1,111 @@
+/* Primero que nada, voy a hacer import de las letras que usaré. Ubuntu únicamente para el logo, Nunito para todo lo demás, los subtítulos van con weight: bold */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Ubuntu&display=swap');
+/* Ya habiendo hecho el import, voy a hacer el reset, llevando padding y margin a 0 y dándole un width de 100% para que se ajuste a la pestaña del usuario, también llamo a la fuente de la web, que será Nunito */
+*{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    background-color: #2d2f33;
+    font-family: 'Nunito', sans-serif;
+}
+/* Empiezo haciendo un logo, por ahora será un simple texto. Planeo hacer un logo personalizado más adelante. Quiero que quede arriba a la izquierda, pero sobre la misma línea que mi navbar y mi navbar va a quedar a la derecha */
+.logo a{
+    text-decoration: none;
+    font-size: 2vh;
+}
+.logo--width{
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.logo{
+    display: flex;
+}
+.tamano--navbar{
+    padding: 17px 0px;
+}
+.separacion--navbar{
+    margin-right: 30px;
+}
+/* Ahora voy a poner la imagen bien pegada al navbar y luego voy a darle el sticky al navbar */
+.img--fondo{
+    margin: 0;
+    padding: 0;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+/* El justify acá lo apliqué para que la separación de los ítems del navbar fuera coherente. Obviamente le tuve que aplicar un flex para lograr eso */
+.navbar a{
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    color: #d6d6d6;
+}
+/* Ya perzonalicé el navbar y le di estilo, ahora quiero ponerle un leve hover para darle un toque llamativo, por así decirlo */
+.navbar a{
+    transition: all 0.3s ease 0.1s;
+}
+.navbar a:hover{
+    color: #ff4f01;
+}
+.navbar{
+    list-style: none;
+    text-align: right;
+}
+/* Relleno del index, sigo aún en el header, ya que voy a hacer mi mensaje de bienvenida, quiero que quete todo alineado en columna y en el centro. Más adelante de esto procederé a darle más relleno, por lo que intentaré generar clases generales */
+.subtitulo{
+    color: #d6d6d6;
+    margin: 30px 0px 30px 0px;
+    font-weight: bold;
+}
+/* Clase general para el color de todas las letras de la web */
+.color--letra{
+    color: #d6d6d6;
+}
+.presentacion--index{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* Voy a generalizar un interlineado en todos los párrafos, usare una clase sencilla como interlineado */
+.interlineado{
+    line-height: 50px;
+}
+.click--aqui{
+    text-decoration: none;
+    color: #0096b0;
+    transition: all 0.3s ease 0s;
+}
+.click--aqui:hover{
+    color: #ff4f01;
+}
+/* voy a llamar al footer y darle display para mandarlo al fondo de la página */
+.footer{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 10px;
+}
+/* Botón regresar arriba */
+.volver--arriba{
+    font-size: 15px;
+}
+/* Ahora voy a centrar el contenido ya organizarlo */
+.tamano--caja{
+    margin: 0px 0px 30px 0px;
+}
+.desarrollo--programas{
+    display: flex;
+    margin-top: 30px;
+}
+/* Voy a poner las imágenes de la página contacto */
+.redes--sociales{
+    width: 10%;
+    display: inline-block;
+}

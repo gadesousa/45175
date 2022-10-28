@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página oficial de Gabriel De Sousa">
+    <meta name="robots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lo primero que hice fue agregar mi favicon, que es básicamente mi cara :) -->
+    <link rel="shortcut icon" href="../img/logo--fondoclaro.jpg">
+    <!-- Acá llamo al archivo de CSS en el cual le doy estilo a mi HTML -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <main>
+        <header id="cabeza--pagina">
+            <!-- Primero empiezo haciendo el logo, que al clickearlo te lleva al index y haciendo el navbar. Quiero que acompañe el scroll del usuario, así que le haré un class sticky para llamarlo y darle esa propiedad -->
+            <div class="logo sticky tamano--navbar">
+                <a href="../index.html" class="logo--width"><img src="../img/logolargo--oscuro.jpg" alt=""></a>       
+                <ul class="navbar separacion--navbar">
+                    <!-- Voy a tener: Contacto, Servicios, Perfil y Proyectos -->
+                    <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="../pages/about.html">PERFIL</a></li>
+                    <li><a href="../pages/faq.html">PORTFOLIO</a></li>
+                </ul>
+            </div>
+            <!-- Hago un div aparte para abrir la presentación de mi web, una bienvenida a los usuarios. Voy a incluir una imagen para darle un toque cálido -->
+            <section class="presentacion--index tamano--caja">
+                <img src="../img/img--fondo.jpg" alt="imagenFondo" class="img--fondo">
+                <!-- Quiero que quede centrado el mensaje de bienvenida, así que le voy a incluir una imagen simple de un paisaje random, así intentaré hacer con cada section/div que vengan de ahora en adelante en el index de la página -->
+                <h1 class="subtitulo">Redes Sociales</h1>
+                    <article>
+                        <!-- redes sociales, logos y href -->
+                        <div class="redes--sociales">
+                        <a href="#"><img src="../img/Facebook_f_logo.webp" alt="facebook"></a>
+                        <a href="#"><img src="../img/Instagram.icono.webp" alt="instagram"></a>
+                        <a href="#"><img src="../img/WhatsApp--logo.webp" alt="whatsapp"></a>
+                        </div>
+                    </article>
+            </section>
+            <section class="presentacion--index tamano--caja">
+                <div>
+                    <img src="../img/naturaleza--lago.jpg" alt="naturaleza--lago">
+                </div>
+            </section>
+            <h2 class="subtitulo">Datos</h2>
+            <p class="color--letra">Por favor complete sus datos para ser contactado a la brevedad posible</p>
+            <div>
+                <form>
+                    <label for="name">Nombres</label>
+                    <input type="text" name="name" id="name">
+                    <label for="lastname">Apellidos</label>
+                    <input type="text" name="lastname" id="lastname">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email" id="email">
+                    <label for="number">Número de celular</label>
+                    <input type="tel" name="celular" id="celular">
+                    <h3>Sexo</h3>
+                    <span>Hombre</span>
+                    <input type="radio" name="sexo" id="hombre">
+                    <span>Mujer</span>
+                    <input type="radio" name="sexo" id="mujer">
+                    <h3>Acepto los términos y condiciones</h3>
+                    <input type="checkbox" name="tyc" id="acepta">
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7163.829091411094!2d-58.43661492342965!3d-34.58822451782482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses!2sar!4v1666303394219!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+
+        </header>
+    </main>
+    <!-- footer -->
+    <footer class="footer color--letra">
+        <div>
+            <p>ⓒ 2022 Gabriel De Sousa. Todos los derechos reservados</p>
+        </div>
+        <div>
+            <a href="#cabeza--pagina" class="color--letra click--aqui volver--arriba">⇡ VOLVER PARA ARRIBA ⇡</a>
+        </div>
+    </footer>
+</body>
+</html>

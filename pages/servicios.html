@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página oficial de Gabriel De Sousa">
+    <meta name="robots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lo primero que hice fue agregar mi favicon, que es básicamente mi cara :) -->
+    <link rel="shortcut icon" href="../img/logo--fondoclaro.jpg">
+    <!-- Acá llamo al archivo de CSS en el cual le doy estilo a mi HTML -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Servicios</title>
+</head>
+<body>
+    <main>
+        <header id="cabeza--pagina">
+            <!-- Primero empiezo haciendo el logo, que al clickearlo te lleva al index y haciendo el navbar. Quiero que acompañe el scroll del usuario, así que le haré un class sticky para llamarlo y darle esa propiedad -->
+            <div class="logo sticky tamano--navbar">
+                <a href="../index.html" class="logo--width"><img src="../img/logolargo--oscuro.jpg" alt=""></a>       
+                <ul class="navbar separacion--navbar">
+                    <!-- Voy a tener: Contacto, Servicios, Perfil y Proyectos -->
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="../pages/about.html">PERFIL</a></li>
+                    <li><a href="../pages/faq.html">PORTFOLIO</a></li>
+                </ul>
+            </div>
+            <!-- Hago un div aparte para abrir la presentación de mi web, una bienvenida a los usuarios. Voy a incluir una imagen para darle un toque cálido -->
+            <section class="presentacion--index tamano--caja">
+                <img src="../img/img--fondo.jpg" alt="imagenFondo" class="img--fondo">
+                <!-- Quiero que quede centrado el mensaje de bienvenida, así que le voy a incluir una imagen simple de un paisaje random, así intentaré hacer con cada section/div que vengan de ahora en adelante en el index de la página -->
+                <h2 class="subtitulo">¡Bienvenido a mi página web!</h2>
+                    <article>
+                        <!-- Quiero enfatizarle al usuario cuando lea mi index que tiene la pestaña de contacto para contratar mis servicios y que al mismo tiempo pueden saber mi trayectoria antes de hacer ese paso. -->
+                        <p class="color--letra interlineado">Explora y conoce toda la información sobre mis conocimientos y proyectos. Si estás interesado en una web personalizada haz click <a href="../pages/contacto.html" class="click--aqui">aquí.</a></p>
+                        <p class="color--letra interlineado">¡Pero espera!, antes de contactarme o contratar mis servicios puedes <a href="../pages/about.html" class="click--aqui">conocer más sobre mi.</a></p>
+                    </article>
+            </section>
+            <section class="presentacion--index tamano--caja">
+                <img src="../img/naturaleza--lago.jpg" alt="naturaleza--lago">
+                <div>
+                    <h2 class="subtitulo">Desarrollo Web</h2>
+                    <p class="color--letra interlineado">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vitae sint cumque nulla corrupti consequuntur saepe! Recusandae dolores possimus eaque? Ullam numquam libero saepe deserunt temporibus! Laudantium dolore voluptas architecto unde quod totam deleniti quo cum nobis. Aperiam deserunt perferendis cum consectetur aspernatur ad facere! Aliquid impedit voluptas id provident?
+                    </p>
+                </div>
+                <div class="desarrollo--programas">
+                    <div>
+                        <h3 class="subtitulo">HTML</h3>
+                        <p class="color--letra interlineado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, perspiciatis.</p>
+                        <p class="color--letra interlineado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis, sapiente modi aliquam veniam est recusandae repudiandae laudantium doloribus expedita vel minima earum doloremque officiis nemo alias, consequatur voluptatibus ducimus?</p>
+                    </div>
+                    <div>
+                        <h3 class="subtitulo">CSS</h3>
+                        <p class="color--letra interlineado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, perspiciatis.</p>
+                        <p class="color--letra interlineado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis, sapiente modi aliquam veniam est recusandae repudiandae laudantium doloribus expedita vel minima earum doloremque officiis nemo alias, consequatur voluptatibus ducimus?</p>
+                    </div>
+                    <div>
+                        <h3 class="subtitulo">JavaScript</h3>
+                        <p class="color--letra interlineado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, perspiciatis.</p>
+                        <p class="color--letra interlineado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis, sapiente modi aliquam veniam est recusandae repudiandae laudantium doloribus expedita vel minima earum doloremque officiis nemo alias, consequatur voluptatibus ducimus?</p>
+                    </div>
+                </div>
+            </section>
+            
+
+        </header>
+    </main>
+    <!-- footer -->
+    <footer class="footer color--letra">
+        <div>
+            <p>ⓒ 2022 Gabriel De Sousa. Todos los derechos reservados</p>
+        </div>
+        <div>
+            <a href="#cabeza--pagina" class="color--letra click--aqui volver--arriba">⇡ VOLVER PARA ARRIBA ⇡</a>
+        </div>
+    </footer>
+</body>
+</html>
